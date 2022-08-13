@@ -1,0 +1,392 @@
+1
+#include<stdio.h>
+int main()
+{
+int a;
+printf("enter the number");
+scanf("%d",&a);
+if(a>0)
+printf("given number is positive");
+else
+printf("given number is non positive");
+return 0;
+}
+output=enter the number-7
+given number is non positive
+
+enter the number4
+given number is positive
+
+2
+#include<stdio.h>
+int main()
+{
+int a;
+printf("enter the number");
+scanf("%d",&a);
+if(a%5==0)
+printf("given number is divisable 5");
+else
+printf("given number is not divisable by 5");
+return 0;
+}
+output=enter the number456
+given number is not divisable by 5
+
+enter the number5690
+given number is divisable 5
+
+3
+#include<stdio.h>
+int main()
+{
+int a;
+printf("enter the number");
+scanf("%d",&a);
+if(a%2==0)
+printf("given number is even");
+else
+printf("given number is odd");
+return 0;
+}
+output=enter the number6
+given number is even
+
+enter the number5
+given number is odd
+
+
+4
+#include<stdio.h>
+int main()
+{
+int a;
+printf("enter the number");
+scanf("%d",&a);
+if((a/2)*2==a)
+printf("given number is even");
+else
+printf("given number is odd");
+return 0;
+}
+output=enter the number6
+given number is even
+
+
+5
+#include<stdio.h>
+int main()
+{
+int a,count=0;
+printf("enter the number");
+scanf("%d",&a);
+if(a>99 && a<1000)
+printf("given number is three digit number");
+else
+printf("given number is three not digit number");
+return 0;
+}
+
+output=enter the number456
+given number is three digit number
+
+
+6
+#include<stdio.h>
+int main()
+{
+int a,b;
+printf("enter the number");
+scanf("%d%d",&a,&b);
+if(a>b)
+printf("greater number is %d",a);
+else
+printf("greater number is %d",b);
+return 0;
+}
+output=enter the number6
+9
+greater number is 9
+
+
+8
+#include<stdio.h>
+int main()
+{
+int a,count=0;
+printf("enter the number");
+scanf("%d",&a);
+if(a%400==0 || a%4==0 && a%100!=0)
+printf("given year is a leap year");
+else
+printf("given year is  not a leap year");
+return 0;
+}
+output=enter the number2020
+given year is a leap year
+
+
+9
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+printf("enter the number");
+scanf("%d%d%d",&a,&b,&c);
+if(a>b&&a>c)
+printf("greater number is %d",a);
+else if(b>a&&b>c)
+printf("greater number is %d",b);
+else if(c>a&&c>b)
+printf("greater number is %d",c);
+else
+    printf("you have entered a invalid number");
+return 0;
+}
+output=enter the number5
+6
+7
+greater number is 7
+
+10
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+float cp,sp;
+printf("enter the cost prise");
+scanf("%d",&cp);
+printf("enter the selling prise");
+scanf("%d",&sp);
+
+if(sp==cp)
+    printf("no profit no loss");
+    else if(sp>cp)
+        printf("profit percentage is %d",sp-cp/cp*100);
+        else
+            printf("loss percentage is %d",cp-sp/cp*100);
+
+    getch();
+}
+output=enter the cost prise678
+enter the selling prise897
+profit percentage is 0
+
+
+11
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    printf("enter the marks of 5 subject");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    if(a>=33&&b>=33&&c>=33&&d>=33&&c>=33)
+        printf("student is passed");
+    else
+        printf("student is fail");
+    return 0;
+}
+output=enter the marks of 5 subject65
+87
+86
+89
+65
+student is passed
+
+
+12
+#include<stdio.h>
+int main()
+{
+    int ch;
+    printf("Enter a number : ");
+    scanf("%c",&ch);
+    if(ch>='a'&&ch<='z')
+        printf(" lower case ");
+    else if(ch>='A'&&ch<='z')
+        printf("upper case ");
+        return 0;
+}
+output=Enter a number : a
+ lower case
+
+
+13
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    if(a%2==0 && a%3==0)
+        printf(" number is divided is by 3 and 2 ");
+    else
+        printf("number is not divided by  3 and 2 ");
+        return 0;
+}
+output=Enter a number : 68
+number is not divided by  3 and 2
+
+
+14
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    if(a%7==0 || a%3==0)
+        printf(" number is divided is by 3 and 7 ");
+    else
+        printf("number is not divided by  3 and 7 ");
+        return 0;
+}
+
+output=Enter a number : 21
+ number is divided is by 3 and 2
+
+
+15
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    if(a>0)
+        printf("number is positve");
+    else if(a<0)
+        printf("number is negative");
+    else if(a==0)
+        printf("number is zero");
+    return 0;
+}
+output=Enter a number : 6
+number is positve
+
+
+16
+#include<stdio.h>
+int main()
+{
+    int ch;
+    printf("Enter a character : ");
+    scanf("%ch",&ch);
+    if(ch>='a' &&ch<='z')
+        printf("character is lower case");
+    else if(ch>='A'&&ch<='Z')
+        printf("character is upperercase");
+    else
+        printf("you have entered a special character");
+    return 0;
+}
+output=Enter a character : A
+character is upperercase
+
+17
+1 programme of checkuing sides of triangle
+#include<stdio.h>
+int main()
+{
+int side1,side2,side3,sum,largest;
+printf("enter three side of triangle");
+scanf("%d%d%d",&side1,&side2,&side3);
+if(side1>side2)
+ {
+     if(side1>side3)
+     {
+         largest=side1;
+         sum=side3+side2;
+    }
+    else
+    {
+        largest=side3;
+        sum=side1+side2;
+    }
+
+ }
+ else
+    {
+              if(side2>side3)
+        {
+              largest=side2;
+             sum=side3+side1;
+        }
+         else
+        {
+           largest=side3;
+           sum=side1+side2;
+        }
+  }
+printf("largest side is %d\n",largest);
+printf("sum of the side is %d\n",sum);
+if(sum>largest)
+printf("triangle is valid");
+else
+    printf("triangle is not valid");
+}
+output=enter three side of triangle6
+7
+8
+largest side is 8
+sum of the side is 13
+
+
+
+
+18
+#include<stdio.h>
+int main()
+{
+    int a;
+printf("enter the month number");
+scanf("%d",&a);
+                  switch(a)
+                  {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        {
+                        printf("days are 31");
+                        break;
+                        }
+
+                        case 2:
+                        {
+                            printf("days are 28/29");
+                            break;
+
+                        }
+                        case 4:
+                        case 6:
+                        case 9:
+                        case 11:
+                        {
+
+                            printf("days are 30");
+                            break;
+
+                        }
+                        default:
+                            printf("you have enter an unvalid number");
+                  }
+                        return 0;
+                        }
+output=enter the month number2
+days are 28/29
+
+
+
+
+
+
+
+
+
+
+
+
